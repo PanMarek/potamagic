@@ -1,0 +1,32 @@
+# Task Checklist: POTA Activation Tracker
+
+- [x] Setup database schema (`schema.sql`)
+- [x] Setup configurations
+  - [x] Database credentials (`config/db.php`)
+  - [x] SMTP/Email verification simulation (`config/smtp.php`)
+- [x] PHPMailer / Mail Wrapper integration
+- [x] Build Frontend assets
+  - [x] Central stylesheet (`css/style.css`)
+  - [x] General Javascript (`js/app.js`)
+- [x] Create layout helper files
+  - [x] Page Header (`includes/header.php`)
+  - [x] Page Footer (`includes/footer.php`)
+- [x] Implement User Authentication
+  - [x] Registration with verification (`register.php`)
+  - [x] Token verification landing (`verify.php`)
+  - [x] Login screen (`login.php`)
+  - [x] Logout utility (`logout.php`)
+- [x] Implement Equipment Profile Management
+  - [x] Add, edit, delete templates (`equipment_profiles.php`)
+- [x] Implement Activations Functionality
+  - [x] Add activation with POTA API lookup (`add_activation.php`)
+  - [x] Edit activation (`edit_activation.php`)
+  - [x] Delete activation (`delete_activation.php`)
+- [x] Implement Browsing and Public Dashboard
+  - [x] Homepage with Slider + Chart.js Dashboard + Grouped List (`index.php`)
+  - [x] Activation details view (`activation_details.php`)
+- [x] Implement Administration Pages
+  - [x] User Administration (`admin_users.php`)
+  - [x] Hero Slider Uploads (`admin_slider.php`)
+  - [x] Bands & Modes Metadata Editor (`admin_metadata.php`)
+- [x] Verification and Polish
