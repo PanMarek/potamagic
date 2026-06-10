@@ -43,14 +43,14 @@ $user_role = $is_logged_in ? $_SESSION['role'] : 'guest';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<div style="margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
+<div class="page-header">
     <div>
         <span class="badge badge-registered" style="margin-bottom: 10px;"><?= htmlspecialchars($act['park_reference']) ?></span>
         <h2><?= htmlspecialchars($act['park_name']) ?></h2>
         <p style="color: var(--text-secondary);"><i class="fa-solid fa-calendar"></i> Activated on <?= date('F d, Y', strtotime($act['activation_date'])) ?> by de <strong><?= htmlspecialchars($act['username']) ?></strong></p>
     </div>
     
-    <div style="display: flex; gap: 10px;">
+    <div class="page-actions">
         <a href="index.php" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back to List</a>
         <?php if ($is_logged_in && ($act['user_id'] == $user_id || $user_role === 'admin')): ?>
             <a href="edit_activation.php?id=<?= $act['id'] ?>" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Edit</a>

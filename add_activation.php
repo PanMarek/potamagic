@@ -316,7 +316,7 @@ require_once __DIR__ . '/includes/header.php';
             <small style="color: var(--text-muted); margin-top: 5px; display: block;">Supported formats: JPEG/JPG, PNG, WebP.</small>
         </div>
         
-        <div class="form-group form-group-full" style="display: flex; gap: 15px; margin-top: 25px;">
+        <div class="form-group form-group-full form-actions">
             <button type="submit" class="btn btn-primary btn-full"><i class="fa-solid fa-floppy-disk"></i> Save Activation</button>
             <a href="index.php" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i> Cancel</a>
         </div>

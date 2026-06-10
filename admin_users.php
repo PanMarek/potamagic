@@ -99,7 +99,7 @@ require_once __DIR__ . '/includes/header.php';
 
 <div class="segment" style="padding: 24px;">
     <!-- User Search -->
-    <form action="admin_users.php" method="GET" style="display: flex; gap: 10px; margin-bottom: 25px; max-width: 500px;">
+    <form action="admin_users.php" method="GET" class="inline-flex-form" style="max-width: 500px;">
         <input type="text" name="search" class="form-control" placeholder="Search by callsign/username or email..." value="<?= htmlspecialchars($search) ?>">
         <button type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
         <?php if ($search !== ''): ?>

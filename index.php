@@ -116,7 +116,7 @@ if ($stats['total_activations'] > 0) {
     }
     arsort($mode_counts);
     $mode_chart_data = array_slice($mode_counts, 0, 6); // Top 6 modes
-
+ 
     // Process locations (Entity Prefixes)
     $loc_counts = [];
     foreach ($pdo->query("SELECT park_reference FROM activations")->fetchAll(PDO::FETCH_COLUMN) as $ref) {
@@ -441,7 +441,7 @@ require_once __DIR__ . '/includes/header.php';
                         maintainAspectRatio: false,
                         plugins: {
                             legend: {
-                                position: 'right',
+                                position: window.innerWidth < 480 ? 'bottom' : 'right',
                                 labels: {
                                     color: '#4a5d51',
                                     font: {

@@ -114,7 +114,7 @@ require_once __DIR__ . '/includes/header.php';
     <div class="segment">
         <h3 class="segment-title"><i class="fa-solid fa-wave-square" style="color: var(--accent-color);"></i> Operating Bands</h3>
         
-        <form action="admin_metadata.php" method="POST" style="display: flex; gap: 10px; margin-bottom: 25px;">
+        <form action="admin_metadata.php" method="POST" class="inline-flex-form">
             <input type="hidden" name="action" value="add_band">
             <input type="text" name="band_name" class="form-control" placeholder="e.g. 17m, 1.25m" required>
             <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add</button>
@@ -152,7 +152,7 @@ require_once __DIR__ . '/includes/header.php';
     <div class="segment">
         <h3 class="segment-title"><i class="fa-solid fa-radio" style="color: var(--accent-color);"></i> Operating Modes</h3>
         
-        <form action="admin_metadata.php" method="POST" style="display: flex; gap: 10px; margin-bottom: 25px;">
+        <form action="admin_metadata.php" method="POST" class="inline-flex-form">
             <input type="hidden" name="action" value="add_mode">
             <input type="text" name="mode_name" class="form-control" placeholder="e.g. RTTY, PSK31" required>
             <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add</button>
