@@ -425,15 +425,15 @@ require_once __DIR__ . '/includes/header.php';
                         datasets: [{
                             data: modeValues,
                             backgroundColor: [
-                                '#f59e0b', // Amber Orange
-                                '#10b981', // Success Green
-                                '#3b82f6', // Blue
-                                '#8b5cf6', // Violet
-                                '#ec4899', // Pink
-                                '#64748b'  // Slate
+                                '#2d6a4f', // Pine Green
+                                '#d97706', // Earthy Amber
+                                '#3a86c8', // Lake Blue
+                                '#8c7853', // Earthy Sand
+                                '#52b788', // Moss Green
+                                '#788c80'  // Sage Grey
                             ],
                             borderWidth: 1,
-                            borderColor: '#161f30'
+                            borderColor: '#ffffff'
                         }]
                     },
                     options: {
@@ -443,7 +443,7 @@ require_once __DIR__ . '/includes/header.php';
                             legend: {
                                 position: 'right',
                                 labels: {
-                                    color: '#94a3b8',
+                                    color: '#4a5d51',
                                     font: {
                                         family: 'Inter',
                                         size: 11

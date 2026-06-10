@@ -72,7 +72,7 @@ $is_verified = $is_logged_in ? $_SESSION['is_verified'] : 0;
         
         // Show simulated verification link if available in session
         if (isset($_SESSION['last_verification_link'])) {
-            echo '<br><strong>Local Testing Link:</strong> <a href="' . $_SESSION['last_verification_link'] . '" style="color: #ffffff; text-decoration: underline;">Verify Account Now</a>';
+            echo '<br><strong>Local Testing Link:</strong> <a href="' . $_SESSION['last_verification_link'] . '" style="color: inherit; text-decoration: underline;">Verify Account Now</a>';
         }
         echo '</div>';
     }
