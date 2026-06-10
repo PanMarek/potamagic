@@ -116,7 +116,7 @@ if ($stats['total_activations'] > 0) {
     }
     arsort($mode_counts);
     $mode_chart_data = array_slice($mode_counts, 0, 6); // Top 6 modes
- 
+
     // Process locations (Entity Prefixes)
     $loc_counts = [];
     foreach ($pdo->query("SELECT park_reference FROM activations")->fetchAll(PDO::FETCH_COLUMN) as $ref) {
@@ -449,6 +449,13 @@ require_once __DIR__ . '/includes/header.php';
                                         size: 11
                                     }
                                 }
+                            }
+                        },
+                        onResize: function(chart) {
+                            const newPos = window.innerWidth < 480 ? 'bottom' : 'right';
+                            if (chart.options.plugins.legend.position !== newPos) {
+                                chart.options.plugins.legend.position = newPos;
+                                chart.update();
                             }
                         }
                     }

@@ -94,9 +94,11 @@ $modes = $pdo->query("SELECT * FROM modes ORDER BY id ASC")->fetchAll();
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<div style="margin-bottom: 30px;">
-    <h2><i class="fa-solid fa-tags" style="color: var(--accent-color);"></i> POTA Metadata Administration</h2>
-    <p style="color: var(--text-secondary);">Manage the system-wide operating Bands and Modes. Activators will choose from these values when logging activations.</p>
+<div class="page-header">
+    <div>
+        <h2><i class="fa-solid fa-tags" style="color: var(--accent-color);"></i> POTA Metadata Administration</h2>
+        <p style="color: var(--text-secondary);">Manage the system-wide operating Bands and Modes. Activators will choose from these values when logging activations.</p>
+    </div>
 </div>
 
 <?php if (!empty($errors)): ?>

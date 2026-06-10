@@ -208,7 +208,7 @@ require_once __DIR__ . '/includes/header.php';
                     <textarea name="additional_equipment" id="additional_equipment" class="form-control" rows="3" placeholder="e.g. Keyer, Mast, Antenna tuner..."><?= htmlspecialchars($additional_equipment) ?></textarea>
                 </div>
                 
-                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                <div class="form-actions" style="margin-top: 10px;">
                     <button type="submit" class="btn btn-primary btn-full"><?= $edit_id ? 'Update Profile' : 'Save Profile' ?></button>
                     <?php if ($edit_id): ?>
                         <a href="equipment_profiles.php" class="btn btn-secondary">Cancel</a>

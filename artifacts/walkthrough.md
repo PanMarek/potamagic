@@ -8,11 +8,13 @@ The Parks on the Air (POTA) Activation Tracker application has been successfully
 
 To ensure a premium first impression, we have generated three high-quality, themed outdoor ham radio landscapes for the home page slider. They are saved in `uploads/slider/`:
 
-![Slider Image 1 - Mountain Activation](file:///C:/Users/Marek/.gemini/antigravity-ide/brain/bd3ccc21-e8a4-4085-8bb7-5046be72b80c/pota_hero_mountain_activation_1781114713064.png)
+![Slider Image 1 - Mountain Activation](C:/Users/Marek/.gemini/antigravity-ide/brain/bd3ccc21-e8a4-4085-8bb7-5046be72b80c/pota_hero_mountain_activation_1781114713064.png)
 
-![Slider Image 2 - Table Rig](file:///C:/Users/Marek/.gemini/antigravity-ide/brain/bd3ccc21-e8a4-4085-8bb7-5046be72b80c/pota_hero_park_rig_1781114727286.png)
+![Slider Image 2 - Table Rig](C:/Users/Marek/.gemini/antigravity-ide/brain/bd3ccc21-e8a4-4085-8bb7-5046be72b80c/pota_hero_park_rig_1781114727286.png)
 
-![Slider Image 3 - Lake Setup](file:///C:/Users/Marek/.gemini/antigravity-ide/brain/bd3ccc21-e8a4-4085-8bb7-5046be72b80c/pota_hero_lake_setup_1781114742552.png)
+![Slider Image 3 - Lake Setup](C:/Users/Marek/.gemini/antigravity-ide/brain/bd3ccc21-e8a4-4085-8bb7-5046be72b80c/pota_hero_lake_setup_1781114742552.png)
+
+
 
 ---
 
@@ -67,3 +69,17 @@ Once running, navigate to `http://localhost:8000` in your web browser.
 - Go to **Users** (`admin_users.php`): You can search users, promote/demote accounts (Admin / Registered), manually verify/unverify emails, or delete accounts.
 - Go to **Slider** (`admin_slider.php`): You can manage the homepage slideshow by uploading new images or deleting existing slides.
 - Go to **Metadata** (`admin_metadata.php`): You can add new operating bands (e.g., "17m") or modes (e.g., "RTTY") or delete unused ones. The activation form checkboxes will update dynamically!
+
+---
+
+## 📱 Responsiveness and Fluid Layouts (New!)
+
+To ensure the application adapts smoothly to all screen sizes (down to 320px) and maintains a premium, easy-to-use interface, we have implemented the following mobile-specific layouts and styling refinements:
+
+1. **Fluid Typography Scaling**: Heading elements (`h1` through `h4`) now scale down proportionally as the viewport size decreases, avoiding layout breaking or text clipping on small phones.
+2. **Form Elements Stacking**: Forms with inline, side-by-side inputs (like the user search bar and metadata addition forms) now stack their fields vertically on screens $\le 500\text{px}$ to optimize viewport utility and spacing.
+3. **Form Action Wrap/Stack**: Primary actions wrappers (like the Save/Cancel buttons on forms) stack vertically on screens $\le 500\text{px}$, providing large, comfortable tap targets.
+4. **Mobile Page Action Wrapping**: The action bar (e.g., details action headers) wraps action buttons cleanly, scaling button sizes to fill the viewport width evenly on small screens.
+5. **Doughnut Chart Legend Repositioning**: The homepage doughnut chart now dynamically moves its segment legend from the `right` to the `bottom` on viewports $\le 480\text{px}$ to prevent chart crowding and legend truncation.
+6. **POTA API Status Text Colors**: Added styling classes (`.text-success`, `.text-danger`, `.text-info`) matching the theme palette to ensure that the AJAX API status responses colorize correctly.
+7. **Mobile Hero Controls Size**: Reduced the slider controls size to `36px` on screens $\le 500\text{px}$ to optimize screen space and avoid overlay collision with page titles.

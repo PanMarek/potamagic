@@ -90,7 +90,7 @@ try {
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<div style="margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+<div class="page-header">
     <div>
         <h2><i class="fa-solid fa-users-gear" style="color: var(--accent-color);"></i> User Administration</h2>
         <p style="color: var(--text-secondary);">Manage system users, change roles, manually verify emails, or delete accounts.</p>

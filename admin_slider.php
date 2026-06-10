@@ -97,9 +97,11 @@ $images = $pdo->query("SELECT * FROM slider_images ORDER BY id DESC")->fetchAll(
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<div style="margin-bottom: 30px;">
-    <h2><i class="fa-solid fa-images" style="color: var(--accent-color);"></i> Hero Slider Management</h2>
-    <p style="color: var(--text-secondary);">Upload, preview, and delete images displayed in the homepage slider header.</p>
+<div class="page-header">
+    <div>
+        <h2><i class="fa-solid fa-images" style="color: var(--accent-color);"></i> Hero Slider Management</h2>
+        <p style="color: var(--text-secondary);">Upload, preview, and delete images displayed in the homepage slider header.</p>
+    </div>
 </div>
 
 <div class="detail-layout">
