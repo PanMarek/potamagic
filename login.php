@@ -81,7 +81,7 @@ require_once __DIR__ . '/includes/header.php';
     </p>
     
     <div style="background-color: var(--bg-tertiary); padding: 15px; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-top: 25px; font-size: 0.85rem; color: var(--text-secondary);">
-        <h4 style="margin-bottom: 5px; color: #ffffff;"><i class="fa-solid fa-circle-info" style="color: var(--accent-color);"></i> Demo Admin Account:</h4>
+        <h4 style="margin-bottom: 5px; color: var(--text-primary);"><i class="fa-solid fa-circle-info" style="color: var(--accent-color);"></i> Demo Admin Account:</h4>
         <strong>Username:</strong> admin &nbsp;|&nbsp; <strong>Password:</strong> admin
     </div>
 </div>

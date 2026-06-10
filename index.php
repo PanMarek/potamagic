@@ -242,7 +242,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </div>
             
-            <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.05); font-size: 0.9rem; color: var(--text-secondary);">
+            <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--border-color); font-size: 0.9rem; color: var(--text-secondary);">
                 <p><i class="fa-solid fa-quote-left" style="color: var(--accent-color); margin-right: 5px;"></i> POTA (Parks on the Air) program encourages portable amateur radio operations from designated state, national, and international parks, raising awareness of outdoor recreation and backup communications.</p>
             </div>
         </div>

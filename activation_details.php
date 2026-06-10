@@ -117,15 +117,15 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             <?php endif; ?>
             
-            <h4 style="margin-top: 15px; margin-bottom: 10px; color: #ffffff;">Directions & Site Notes</h4>
-            <div style="color: var(--text-secondary); background-color: rgba(0,0,0,0.15); padding: 15px; border-radius: var(--radius-md); line-height: 1.7; white-space: pre-wrap; border: 1px solid var(--border-color);"><?= htmlspecialchars($act['localization_notes'] ?: 'No additional notes provided for this site.') ?></div>
+            <h4 style="margin-top: 15px; margin-bottom: 10px; color: var(--text-primary);">Directions & Site Notes</h4>
+            <div style="color: var(--text-secondary); background-color: var(--bg-tertiary); padding: 15px; border-radius: var(--radius-md); line-height: 1.7; white-space: pre-wrap; border: 1px solid var(--border-color);"><?= htmlspecialchars($act['localization_notes'] ?: 'No additional notes provided for this site.') ?></div>
         </div>
         
         <!-- Additional technical or general equipment notes -->
         <?php if (!empty($act['additional_equipment'])): ?>
             <div class="segment">
                 <h3 class="segment-title"><i class="fa-solid fa-circle-nodes" style="color: var(--accent-color);"></i> Additional Gear & Accessories</h3>
-                <div style="color: var(--text-secondary); background-color: rgba(0,0,0,0.15); padding: 15px; border-radius: var(--radius-md); line-height: 1.7; white-space: pre-wrap; border: 1px solid var(--border-color);"><?= htmlspecialchars($act['additional_equipment']) ?></div>
+                <div style="color: var(--text-secondary); background-color: var(--bg-tertiary); padding: 15px; border-radius: var(--radius-md); line-height: 1.7; white-space: pre-wrap; border: 1px solid var(--border-color);"><?= htmlspecialchars($act['additional_equipment']) ?></div>
             </div>
         <?php endif; ?>
     </div>
@@ -149,17 +149,17 @@ require_once __DIR__ . '/includes/header.php';
         <div class="segment">
             <h3 class="segment-title"><i class="fa-solid fa-tower-cell" style="color: var(--accent-color);"></i> Log Summary</h3>
             <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;">
-                <p style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding-bottom: 8px;">
+                <p style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
                     <span style="color: var(--text-secondary);">Total QSOs:</span>
                     <strong style="color: var(--accent-color); font-size: 1.1rem;"><?= $act['qso_count'] ?></strong>
                 </p>
-                <p style="display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding-bottom: 8px;">
+                <p style="display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
                     <span style="color: var(--text-secondary);">Bands Used:</span>
-                    <strong style="color: #ffffff;"><?= htmlspecialchars($act['bands']) ?></strong>
+                    <strong><?= htmlspecialchars($act['bands']) ?></strong>
                 </p>
                 <p style="display: flex; flex-direction: column; gap: 4px; padding-bottom: 4px;">
                     <span style="color: var(--text-secondary);">Modes Used:</span>
-                    <strong style="color: #ffffff;"><?= htmlspecialchars($act['modes']) ?></strong>
+                    <strong><?= htmlspecialchars($act['modes']) ?></strong>
                 </p>
             </div>
         </div>
@@ -168,15 +168,15 @@ require_once __DIR__ . '/includes/header.php';
         <div class="segment">
             <h3 class="segment-title"><i class="fa-solid fa-radio" style="color: var(--accent-color);"></i> Station Gear</h3>
             <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;">
-                <p style="display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding-bottom: 8px;">
+                <p style="display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
                     <span style="color: var(--text-secondary);">Transceiver:</span>
                     <strong><?= htmlspecialchars($act['transceiver'] ?: 'N/A') ?></strong>
                 </p>
-                <p style="display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding-bottom: 8px;">
+                <p style="display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
                     <span style="color: var(--text-secondary);">Antenna:</span>
                     <strong><?= htmlspecialchars($act['antenna'] ?: 'N/A') ?></strong>
                 </p>
-                <p style="display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding-bottom: 8px;">
+                <p style="display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
                     <span style="color: var(--text-secondary);">Power Source:</span>
                     <strong><?= htmlspecialchars($act['power_source'] ?: 'N/A') ?></strong>
                 </p>
