@@ -1,0 +1,13 @@
+# Ignore third-party libraries (can be downloaded separately)
+lib/PHPMailer/
+
+# Ignore user uploads
+uploads/activations/
+uploads/slider/default*.jpg
+
+# Ignore local mail logs and system logs
+mail_log.txt
+*.log
+.DS_Store
+.idea/
+.vscode/
